@@ -9,7 +9,7 @@ node{
    }
    stage('Slack Notification'){
        slackSend baseUrl: 'https://hooks.slack.com/services/',
-       channel: '#cicd-b01',
+       channel: '#cicd-b03',
        color: 'good', 
        message: 'Jenkins Build Success!', 
        teamDomain: 'vedantek',
@@ -21,7 +21,7 @@ node{
 
    stage('Slack Notification'){
        slackSend baseUrl: 'https://hooks.slack.com/services/',
-       channel: '#cicd-b01',
+       channel: '#cicd-b03',
        color: 'good', 
        message: 'Package is uploaded to S3!', 
        teamDomain: 'vedantek',
